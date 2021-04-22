@@ -1,6 +1,6 @@
 # Brute force algorithm. Complexity: O(2^n)
 
-def brute_force_search(shares_list, budget, portfolio = []):
+def brute_force_search(shares_list, budget, portfolio=[]):
     if shares_list:
         # Option 1 : first share of shares_list excluded from portfolio
         portfolio1, portfolio1_profits = brute_force_search(shares_list[1:], budget, portfolio)
@@ -22,6 +22,7 @@ def brute_force_search(shares_list, budget, portfolio = []):
                [float(f"{sum(share[2] for share in portfolio) - sum(share[1] for share in portfolio):.2f}"),
                 sum(share[1] for share in portfolio)]
 
+
 if __name__ == "__main__":
 
     # Import of data from CSV file
@@ -34,11 +35,7 @@ if __name__ == "__main__":
 
     # Application of brute force algorithm
 
-    brute_force_portfolio = brute_force_search(shares, budget = 500, portfolio=[])
+    brute_force_portfolio = brute_force_search(shares, budget=500, portfolio=[])
     print(f"Brute-force portfolio : {brute_force_portfolio[0]}")
     print(f"Portfolio price : {brute_force_portfolio[1][1]}")
     print(f"Portfolio benefits : {brute_force_portfolio[1][0]}")
-
-
-
-
