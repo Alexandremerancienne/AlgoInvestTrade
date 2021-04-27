@@ -11,6 +11,6 @@ Series of algorithms to maximize equity's portfolio performance.
 
 * Dynamic algorithm tested on dataset1.csv and dataset2.csv databases.
 
-## re_optimized.js
+## re_optimized.py
 
 * Greedy algorithm tested on dataset1.csv and dataset2.csv databases.
