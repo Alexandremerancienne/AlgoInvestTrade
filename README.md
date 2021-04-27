@@ -9,8 +9,8 @@ Series of algorithms to maximize equity's portfolio performance.
 
 ## optimized.py
 
-* Dynamic algorithm tested on dataset1.csv and dataset2.csv databases.
+* Dynamic algorithm tested on small_dataset.csv, dataset1.csv and dataset2.csv databases.
 
 ## re_optimized.py
 
-* Greedy algorithm tested on dataset1.csv and dataset2.csv databases.
+* Greedy algorithm tested on small_dataset.csv, dataset1.csv and dataset2.csv databases.
