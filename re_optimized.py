@@ -1,9 +1,9 @@
 # New optimized algorithm - Complexity: O(n*logn)
 
 import time
-start = time.time()
 
 def re_optimized_search(shares_list, budget):
+    start = time.time()
     optimized_portfolio = []
     shares_list.sort(key = lambda share:share[1]/share[2])
     total_profit = 0
